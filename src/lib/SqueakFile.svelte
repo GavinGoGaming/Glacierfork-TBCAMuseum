@@ -9,6 +9,7 @@
 
 	import SqueakFileList from "./SqueakFileList.svelte";
 	import {goto} from "$app/navigation";
+	import {base} from "$app/paths";
 	import {getSize} from "$lib/utils.ts";
 
 
@@ -82,7 +83,7 @@ ${err}`);
 		title={isImage ? "Click to run .image" : ""}
 		on:click={() => {
 			if (isImage) {
-				goto(`/run#${fullPath}`);
+				goto(`{base}/run#${fullPath}`);
 				location.hash = "#" + fullPath;
 			}
 		}}

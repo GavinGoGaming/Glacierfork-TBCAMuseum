@@ -3,6 +3,7 @@
 	import iconDownload from "../assets/disk.png";
 	import iconPlay from "../assets/control_play_blue.png";
 
+	import {base} from "$app/paths";
 	import buildpath from "$lib/buildpath.ts";
 	import {getSize} from "$lib/utils.ts";
 
@@ -50,7 +51,7 @@
 		><img src={iconDownload} alt="Download" draggable="false" /></a
 	>
 	{#if canRun}
-		<a href="/run#{folder + name}"
+		<a href="{base}/run#{folder + name}"
 			><img src={iconPlay} alt="Run" draggable="false" /> {name}</a>
 	{:else}
 		<a href={buildpath + folder + name}>{name}</a>
