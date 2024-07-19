@@ -1,0 +1,1 @@
+Icons are from the Silk icon set, downloaded from [https://github.com/legacy-icons/famfamfam-silk/](https://github.com/legacy-icons/famfamfam-silk/)
