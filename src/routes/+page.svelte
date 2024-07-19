@@ -111,9 +111,9 @@
 		.swf files are run online using <a
 			href="https://ruffle.rs"
 			target="_blank">Ruffle</a
-		>. While it mostly works now, there still are some issues (e.g sound is
+		>. While it kinda works now, there still are issues (e.g sound is
 		missing). You can instead download the .swf files and run them in a
-		standalone Flash player, which you can download e.g here:
+		standalone Flash player, which you can download from e.g here:
 		<a
 			href="https://archive.org/details/flashplayer_32_sa_202107"
 			target="_blank"

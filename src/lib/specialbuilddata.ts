@@ -91,4 +91,7 @@ export default {
 	"misc/ScratchExamples-middleSchoolCamp.zip": {
 		nicknames: ["2006 example projects"],
 	},
+	"misc/YOUScratchProjectsConversion.zip": {
+		nicknames: ["2005 -> 2007 project conversions"],
+	},
 } as { [index: string]: SpecialBuildInfo };

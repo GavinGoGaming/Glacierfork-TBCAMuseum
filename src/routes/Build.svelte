@@ -42,7 +42,7 @@
 	<img
 		class="info-icon"
 		src={iconInfo}
-		alt={lastModified}
+		alt="Info"
 		title={lastModified}
 		draggable="false"
 	/>
@@ -51,9 +51,7 @@
 	>
 	{#if canRun}
 		<a href="/run#{folder + name}"
-			><img src={iconPlay} alt="Run" draggable="false" /></a
-		>
-		<a href="/run#{folder + name}">{name}</a>
+			><img src={iconPlay} alt="Run" draggable="false" /> {name}</a>
 	{:else}
 		<a href={buildpath + folder + name}>{name}</a>
 	{/if}
