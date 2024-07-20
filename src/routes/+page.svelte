@@ -20,6 +20,7 @@
 <div id="nav">
 	<a href="#scratch1">Scratch 1.x builds</a> |
 	<a href="#scratch2">Scratch 2.0 builds</a> |
+	<a href="#scratch3">Scratch 3.0 builds</a> |
 	<a href="#misc">Miscellaneous files</a>
 </div>
 
@@ -136,6 +137,9 @@
 		/>
 	{/each}
 </ul>
+
+<h2 id="scratch3">Scratch 3.0 builds</h2>
+Browse the Scratch 3.0 archives <a href="./run#scratch3/">here</a> (experimental).
 
 <h2 id="misc">Miscellaneous files</h2>
 <p>

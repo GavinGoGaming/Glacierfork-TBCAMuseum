@@ -1,6 +1,8 @@
 <script lang="ts">
 	import {browser} from "$app/environment";
 	import RunnerFlash from "./RunnerFlash.svelte";
+	import RunnerScratch3 from "./RunnerScratch3.svelte";
+	import RunnerScratch3Picker from "./RunnerScratch3Picker.svelte";
 	import RunnerSqueak from "./RunnerSqueak.svelte";
 
 	let imports: Promise<any>;
@@ -12,12 +14,15 @@
 		NONEXISTENT,
 		SQUEAK,
 		FLASH,
+		SCRATCH3,
+		// Scratch 3.0 commit picker
+		SCRATCH3PICKER,
 	}
 	let runType: RunType = RunType.NONE;
 
 	if (browser) {
 		window.RufflePlayer = window.RufflePlayer || {};
-		
+
 		window.RufflePlayer.config = {
 			publicPath: "https://unpkg.com/@ruffle-rs/ruffle/",
 			autoplay: "on",
@@ -36,29 +41,33 @@
 
 		if (
 			(file.startsWith("scratch1/") &&
-			(isZip || file.endsWith(".image"))) || (
-				file.startsWith("/") && file.endsWith(".image")
-			)
+				(isZip || file.endsWith(".image"))) ||
+			(file.startsWith("/") && file.endsWith(".image"))
 		) {
 			runType = RunType.SQUEAK;
 			imports = Promise.all([
 				isZip ? import("@turbowarp/jszip") : null,
 				import("$lib/external/squeak_bundle.js"),
 			]);
-		} else if (
-			file.startsWith("scratch2/") && file.endsWith(".swf")
-		) {
+		} else if (file.startsWith("scratch2/") && file.endsWith(".swf")) {
 			runType = RunType.FLASH;
+			// @ts-ignore untyped
 			imports = import("https://unpkg.com/@ruffle-rs/ruffle");
+		} else if (file.startsWith("scratch3/")) {
+			runType = RunType.SCRATCH3PICKER;
+			title = "Scratch 3.0";
+			imports = Promise.resolve();
 		} else {
 			runType = RunType.NONEXISTENT;
 		}
 	}
 </script>
 
-<svelte:window on:hashchange={() => {
-	if (location.hash) reload();
-}} />
+<svelte:window
+	on:hashchange={() => {
+		if (location.hash) reload();
+	}}
+/>
 
 <svelte:head>
 	{#if title}
@@ -80,6 +89,13 @@
 			<RunnerSqueak jszip={imported[0]} path={file}></RunnerSqueak>
 		{:else if runType == RunType.FLASH}
 			<RunnerFlash path={file}></RunnerFlash>
+		{:else if runType == RunType.SCRATCH3PICKER}
+			<RunnerScratch3Picker
+				{file}
+				onProceed={() => (runType = RunType.SCRATCH3)}
+			></RunnerScratch3Picker>
+		{:else if runType == RunType.SCRATCH3}
+			<RunnerScratch3 {file}></RunnerScratch3>
 		{/if}
 	{:catch error}
 		<p>Something went wrong: {error.message}</p>

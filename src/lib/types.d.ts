@@ -24,3 +24,4 @@ var JSZip: any;
 var SqueakJS: any;
 var Squeak: any;
 var RufflePlayer: any;
+var global: any;
