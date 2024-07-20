@@ -139,7 +139,8 @@
 </ul>
 
 <h2 id="scratch3">Scratch 3.0 builds</h2>
-Browse the Scratch 3.0 archives<a href="./run#scratch3/">here</a>
+Browse the Scratch 3.0 archives
+<a href="./run#scratch3/">here</a>
 (experimental).
 
 <h2 id="misc">Miscellaneous files</h2>
