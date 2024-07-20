@@ -139,12 +139,14 @@
 </ul>
 
 <h2 id="scratch3">Scratch 3.0 builds</h2>
-Browse the Scratch 3.0 archives <a href="./run#scratch3/">here</a> (experimental).
+Browse the Scratch 3.0 archives<a href="./run#scratch3/">here</a>
+(experimental).
 
 <h2 id="misc">Miscellaneous files</h2>
 <p>
-	See also: <a href="https://artech.neocities.org/test2" target="_blank"
-		>How to Run Logo Blocks .lisp Files</a
+	See also: <a
+		href="https://tbca.nukley.com/files/Other%20Media/Other/HowToLBLisp.html"
+		target="_blank">How to Run Logo Blocks .lisp Files</a
 	> by @retro_person
 </p>
 <ul>
