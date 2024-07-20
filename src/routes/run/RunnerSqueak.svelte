@@ -20,7 +20,7 @@
 		// make squeakjs use our jszip instead of theirs
 		if (jszip) window.JSZip = jszip;
 
-		squeak.debugFiles = true;
+		squeak._fromRunner = true;
 		const zippedPath = await extractZip();
 		const options = {
 			spinner: spinner,

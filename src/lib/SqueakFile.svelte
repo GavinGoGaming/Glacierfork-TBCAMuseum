@@ -83,8 +83,10 @@ ${err}`);
 		title={isImage ? "Click to run .image" : ""}
 		on:click={() => {
 			if (isImage) {
-				goto(`${base}/run#${fullPath}`);
-				location.hash = "#" + fullPath;
+				if (squeak._fromRunner)
+					location.hash = "#" + fullPath;
+				else
+					goto(`${base}/run#${fullPath}`);
 			}
 		}}
 	>
