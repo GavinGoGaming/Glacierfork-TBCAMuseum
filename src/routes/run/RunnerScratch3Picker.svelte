@@ -17,7 +17,7 @@
 	const MAX_PAGE_REGEX = /(\d+)>;\s*rel="last"/i;
 	// branches to add at the start of the list instead of the end
 	const PRIORITIZED_BRANCHES: string[] = ["master", "develop"];
-	const ROOT_FILES: string[] = ["gui.js", "gui.min.js"];
+	const ROOT_FILES: string[] = ["gui.js", "lib.min.js"];
 
 	function init() {
 		const version = file.replace("scratch3/", "");
