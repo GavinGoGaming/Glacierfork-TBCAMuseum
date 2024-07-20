@@ -83,7 +83,7 @@ ${err}`);
 		title={isImage ? "Click to run .image" : ""}
 		on:click={() => {
 			if (isImage) {
-				goto(`{base}/run#${fullPath}`);
+				goto(`${base}/run#${fullPath}`);
 				location.hash = "#" + fullPath;
 			}
 		}}
