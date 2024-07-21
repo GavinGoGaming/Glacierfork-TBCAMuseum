@@ -148,7 +148,11 @@ Browse the Scratch 3.0 archives
 	See also: <a
 		href="https://tbca.nukley.com/files/Other%20Media/Other/HowToLBLisp.html"
 		target="_blank">How to Run Logo Blocks .lisp Files</a
-	> by @retro_person
+	>
+	by
+	<a href="https://scratch.mit.edu/users/retro_person/" target="_blank"
+		>@retro_person</a
+	>
 </p>
 <ul>
 	{#each builddata.miscorder as build}
