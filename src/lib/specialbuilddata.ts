@@ -82,7 +82,7 @@ export default {
 		nicknames: ["An i-BOX Logo Blocks build"],
 	},
 	"misc/Scratch.rar": {
-		nicknames: ["October 2003 sample projects"],
+		nicknames: ["October 2004 sample projects"],
 		infoLink: "https://web.archive.org/web/20140831152138/http://llk.media.mit.edu/courses/software/scratch/sample-projects/",
 	},
 	"misc/ScratchProjects1.zip": {
