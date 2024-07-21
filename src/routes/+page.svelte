@@ -2,6 +2,7 @@
 	import iconFolder from "../assets/folder.png";
 	import iconInfo from "../assets/information.png";
 	import Build from "./Build.svelte";
+	import Changelog from "./Changelog.svelte";
 	import _builddata from "$lib/builddata.json";
 	import specialBuilddata from "$lib/specialbuilddata.ts";
 	import SqueakFilesystem from "$lib/SqueakFilesystem.svelte";
@@ -21,7 +22,8 @@
 	<a href="#scratch1">Scratch 1.x builds</a> |
 	<a href="#scratch2">Scratch 2.0 builds</a> |
 	<a href="#scratch3">Scratch 3.0 builds</a> |
-	<a href="#misc">Miscellaneous files</a>
+	<a href="#misc">Miscellaneous files</a> |
+	<a href="#changelog">Changelog</a>
 </div>
 
 <p>
@@ -164,6 +166,10 @@ Browse the Scratch 3.0 archives
 		/>
 	{/each}
 </ul>
+
+<h2 id="changelog">Changelog</h2>
+
+<Changelog></Changelog>
 
 <SqueakFilesystem />
 
