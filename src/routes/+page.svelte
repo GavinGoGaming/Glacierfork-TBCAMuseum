@@ -11,54 +11,10 @@
 </script>
 
 <svelte:head>
-	<title>The Block Coding Archive Museum</title>
+	<title>TCBA Glacier fork</title>
 </svelte:head>
 
-<h1>The Block Coding Archive Museum</h1>
-
-<p>Run many early Scratch builds online (or just download them)!</p>
-
-<div id="nav">
-	<a href="#scratch1">Scratch 1.x builds</a> |
-	<a href="#scratch2">Scratch 2.0 builds</a> |
-	<a href="#scratch3">Scratch 3.0 builds</a> |
-	<a href="#misc">Miscellaneous files</a> |
-	<a href="#changelog">Changelog</a>
-</div>
-
-<p>
-	Website made by <a
-		href="https://scratch.mit.edu/users/CST1229"
-		target="_blank">@CST1229</a
-	>. Inspired by
-	<a href="https://scratcharchive.naleksuh.com" target="_blank"
-		>Naleksuh's Scratch archive.</a
-	>
-</p>
-
-<p>
-	Thanks to everyone who archived these builds over the years; especially <a
-		href="https://scratch.mit.edu/users/djdolphin/"
-		target="_blank">@djdolphin</a
-	> who got most Scratch 2.0 and 1.x builds, and the rest of The Block Coding Archive
-	team for some other finds (like the LogoBlocks builds and 11Oct03).
-</p>
-
-<p>
-	All icons are from the <a
-		href="https://github.com/legacy-icons/famfamfam-silk"
-		target="_blank">Silk icon set</a
-	>. You might have seen them before.
-</p>
-
-<p>
-	The modified dates of some, but not all, files have been preserved. You can
-	check by hovering over the
-	<img src={iconInfo} alt="info" draggable="false" />
-	icon next to each file. If it shows a last modified date from 2017 or later,
-	its modified date most likely hasn't been preserved.
-</p>
-
+<h1>TBCA for Glacier</h1>
 <h2 id="scratch1">Scratch 1.x builds</h2>
 <ul>
 	<li>
